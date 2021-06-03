@@ -1,0 +1,12 @@
+<div>
+    <form [formGroup]="companyForm" class="example-form" (submit)="onNewDomain()">
+        <mat-form-field class="example-full-width">
+          <mat-label>Insert new Comapny Domain</mat-label>
+          <input matInput formControlName="domain" placeholder="domain" value="Sushi">
+        </mat-form-field>
+      
+     </form>
+
+</div>
+
+<app-companies [companies]='companies'></app-companies>
